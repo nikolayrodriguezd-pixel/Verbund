@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CHIDRO</title>
+    <link rel="stylesheet" href="contrahidro.css">
+</head>
+<body>
+
+<header>
+<div class="logo">VERBUND</div>
+<nav class="menu-principal">
+  <ul>
+    <li><a href="Proyecto final.html">Inicio</a></li>
+    <li><a href="SobreVerbud.html">Sobre VERBUND</a></li>
+    <li class="dropdown">
+      <a href="Servicios.html">Servicios VERBUND</a>
+      <ul class="submenu">
+            <li><a href="solar.html">Solar</a></li>
+            <li><a href="heolico.html">Eólico</a></li>
+            <li><a href="hidrogeno.html">Hidrógeno</a></li>
+      </ul>
+    </li>
+    <li><a href="atencioncliente.html">Atención al cliente</a></li>
+  </ul>
+</nav>
+</header>
+    <div style="background:#f5f7fa; padding:30px; border-radius:10px;">
+        <h2>Datos contrato</h2>
+        <input placeholder="Nombre">
+        <input placeholder="Teléfono">
+        <input placeholder="CUPS">
+        <select>
+            <option>Tarifa Solar</option>
+            <option>Estándar €4.2/kg</option>
+            <option>Premium €12.8/kg</option>
+        </select>
+        <fieldset>
+        <legend>Porcentaje de energia renovable:</legend>
+        <div>
+            <input type="radio" id="opcion1" name="grupo" value="op1">
+            <label for="opcion1">100kg</label>
+        </div>
+        <div>
+            <input type="radio" id="opcion2" name="grupo" value="op2">
+            <label for="opcion2">75kg</label>
+        </div>
+        <div>
+            <input type="radio" id="opcion3" name="grupo" value="op3">
+            <label for="opcion3">50kg</label>
+        </div>
+        <div>
+            <input type="radio" id="opcion3" name="grupo" value="op3">
+            <label for="opcion3">25kg</label>
+        </div>
+                <div>
+            <input type="radio" id="opcion3" name="grupo" value="op3">
+            <label for="opcion3">Otros (escribir en el cuadro de texto)</label>
+        </div>
+    </fieldset>
+        <form>
+        <label>
+            <input type="checkbox" name="opcion1" value="1"> App Control
+        </label><br>
+        
+        <label>
+            <input type="checkbox" name="opcion2" value="2"> Cargador VE
+        </label><br>
+        
+        <label>
+            <input type="checkbox" name="opcion3" value="3"> Almacenamiento
+        </label><br>
+
+<textarea placeholder="Comentarios"></textarea>
+
+<form >
+  <input type="submit" value="Enviar">
+  <input type="submit" value="Restablecer">
+</form>
+</div>
+
+<footer>
+    <p>© 2026 VERBUND - Energías Renovables</p>
+</footer>
+
+</body>
+</html>

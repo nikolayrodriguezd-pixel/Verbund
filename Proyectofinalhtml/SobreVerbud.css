@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #ffffff;
+    color: #00255c;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* NAV CON DROPDOWN */
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav li {
+    position: relative;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #00255c;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+nav a:hover {
+    color: #00255c;
+}
+
+/* SUBMENÚ DESPLEGABLE */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    list-style: none;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.submenu a:last-child {
+    border-bottom: none;
+}
+
+.submenu a:hover {
+    background: #f5f7fa;
+}
+
+/* ABOUT */
+.about {
+    position: relative; 
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 12px;
+    padding: 400px;
+    background: linear-gradient(135deg, #0050a0 0%, #0050a0 100%); 
+    background-image: url("Verbunddibujo.png");
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 100, 250);
+}
+  
+
+.about h1 {
+  position: absolute;
+  top: 40px;                 
+  left: 40px;                
+  max-width: 400px;
+  color: #0050a0;
+  font-size: 50px;
+  margin: 0 0 15px;
+}
+
+.sobre-verbund {
+  position: relative;
+  margin: 20px;
+  border-radius: 12px;
+  height: 500px;
+  background-image: url("img/sobre-verbund.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.texto-sobre {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  max-width: 450px;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+  font-family: Arial, sans-serif;
+}
+
+.texto-sobre h1 {
+  font-size: 42px;
+  margin: 0 0 20px;
+  line-height: 1.1;
+}
+
+.texto-sobre p {
+  font-size: 16px;
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+/* verbund-info */
+.verbund-info {
+  position: relative;
+  margin: 20px;
+  border-radius: 12px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.texto-verbund {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  max-width: 1200px;
+  color: #0050a0;
+  font-family: Arial, sans-serif;
+}
+
+.texto-verbund h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+
+/* sobre verbund */
+/* SECCIÓN */
+
+.container {
+    max-width: 2100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 30px;
+    background-color: #f5f7fa;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.text-box {
+    background-color: #d6d6d6;
+    padding: 40px;
+    border-radius: 6px;
+    color: #333;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.text-box p {
+    margin-bottom: 20px;
+}
+
+.image-box {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*Mision-v*/
+
+.section {
+    max-width: 1400px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 60px;
+    padding: 40px;
+}
+
+.left {
+    position: relative;
+}
+
+.mission-title {
+    font-size: 90px;
+    color: #1b4f8a;
+    margin: 0;
+    font-weight: 500;
+}
+
+.illustration {
+    position: absolute;
+    bottom: -350px;
+    left: -150px;
+    width: 900px;   
+    max-width: none;
+}
+
+.right h2 {
+    font-size: 42px;
+    color: #1b4f8a;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.right p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #00255c;
+    color: white;
+}
+@media (max-width: 1300px) {
+    header {
+        padding: 15px 40px;
+    }
+    
+    .about {
+        padding: 300px 40px; /* Menos padding vertical */
+        margin: 10px;
+    }
+    
+    .sobre-verbund, .verbund-info {
+        height: 400px; /* Compacto */
+        margin: 10px;
+    }
+    
+    .container {
+        max-width: 1200px;
+        grid-template-columns: 1fr 1fr; /* Mantén grid */
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .section {
+        max-width: 1200px;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 20px;
+    }
+    
+    .mission-title {
+        font-size: 70px;
+    }
+    
+    .illustration {
+        width: 700px;
+        bottom: -250px;
+        left: -100px;
+    }
+}
+
+/* Para móvil: máximo 600px, disposición vertical */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+    
+    nav a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    
+    .about {
+        padding: 200px 20px; /* Muy compacto */
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .about h1, .texto-sobre h1, .texto-verbund h1 {
+        font-size: 28px;
+        left: 20px;
+        max-width: 90%;
+    }
+    
+    .texto-sobre, .texto-verbund {
+        left: 20px;
+        top: 20px;
+        max-width: 90%;
+        font-size: 14px;
+    }
+    
+    .sobre-verbund, .verbund-info {
+        height: 300px;
+        margin: 5px;
+    }
+    
+    .container {
+        grid-template-columns: 1fr; /* Una columna */
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    
+    .section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    .mission-title {
+        font-size: 48px;
+    }
+    
+    .illustration {
+        display: none; /* Oculta en móvil para simplicidad */
+    }
+    
+    .right h2 {
+        font-size: 28px;
+    }
+    
+    .text-box {
+        padding: 20px;
+        font-size: 16px;
+    }
+    
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
