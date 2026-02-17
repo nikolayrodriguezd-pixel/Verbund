@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #ffffff;
+    color: #00255c;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav li {
+    position: relative;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #00255c;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+nav a:hover {
+    color: #00255c;
+}
+
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    list-style: none;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.submenu a:last-child {
+    border-bottom: none;
+}
+
+.submenu a:hover {
+    background: #f5f7fa;
+}
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.hero-box {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  background-color: #ffffff;
+  padding: 45px 120px 45px 55px;
+}
+
+.hero-box h1 {
+  font-size: 64px;
+  color: #004685;
+}
+
+
+
+.breadcrumb {
+  font-size: 14px;
+  margin: 18px 40px;
+  color: #00255c;
+}
+
+.breadcrumb a {
+  color: #004685;
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  margin: 0 4px;
+}
+
+
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+  padding: 70px 40px 90px;
+  text-align: center;
+}
+
+
+.stat-card {
+  max-width: 280px;
+  color: #004685;
+}
+
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  border: 3px solid #004685;
+  animation: rebote 1s 3 ease-in-out;
+}
+
+@keyframes rebote{
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-50px); }
+    100%{ transform: translateY(0); }
+}
+
+
+¨{
+ content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 13px auto 0;
+  border-radius: 50%;
+  border: 2px solid #004685;
+}
+
+
+.stat-number {
+  font-size: 90px;
+  line-height: 1;
+  margin-bottom: 8px;
+  animation: rebote 1s 3 ease-in-out;
+}
+
+@keyframes rebote{
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-50px); }
+    100%{ transform: translateY(0); }
+}
+
+.stat-text {
+  font-size: 18px;
+  color: #00255c;
+  animation: rebote 1s 3 ease-in-out;
+}
+
+@keyframes rebote{
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-50px); }
+    100%{ transform: translateY(0); }
+}
+
+
+
+.container {
+    max-width: 2100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 30px;
+    background-color: #f5f7fa;
+    padding: 30px;
+    border-radius: 8px;
+
+}
+
+.text-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 6px;
+    color: #004685;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.text-box p {
+    margin-bottom: 60px;
+}
+
+.image-box {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.text-box1 {
+    background-color: #004685;
+    padding: 40px;
+    border-radius: 6px;
+    color: #ffffff;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.text-box1 p {
+    margin-bottom: 20px;
+}
+
+.image-box1 {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.image-box1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.text-box2 {
+    background-color: #004685;
+    padding: 40px;
+    border-radius: 6px;
+    color: #ffffff;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.text-box2 p {
+    margin-bottom: 20px;
+}
+
+.image-box2 {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.image-box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.text-box3 {
+    background-color: #004685;
+    padding: 40px;
+    border-radius: 6px;
+    color: #ffffff;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.text-box3 p {
+    margin-bottom: 20px;
+}
+
+.image-box3 {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.image-box3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #00255c;
+    color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    padding: 15px 40px; 
+  }
+  .stats {
+    gap: 80px; 
+    padding: 50px 20px;
+  }
+  .container {
+    max-width: 100%;
+    grid-template-columns: 1fr; 
+    margin: 20px;
+    gap: 20px;
+  }
+  .hero-box {
+    padding: 30px 60px 30px 40px; 
+    left: 10px;
+  }
+  .hero-box h1 {
+    font-size: 48px; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .submenu {
+    position: static; 
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    min-width: auto;
+  }
+  .hero {
+    height: 200px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .hero-box {
+    position: static; 
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+  .hero-box h1 {
+    font-size: 32px;
+  }
+  .stats {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 10px;
+  }
+  .stat-number {
+    font-size: 60px;
+  }
+  .container {
+    margin: 10px;
+    padding: 20px;
+    gap: 15px;
+  }
+  .text-box, .text-box1, .text-box2, .text-box3 {
+    padding: 20px;
+    font-size: 16px;
+  }
+  footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+}

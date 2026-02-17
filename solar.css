@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #ffffff;
+    color: #00255c;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav li {
+    position: relative;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #00255c;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+nav a:hover {
+    color: #00255c;
+}
+
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    list-style: none;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.submenu a:last-child {
+    border-bottom: none;
+}
+
+.submenu a:hover {
+    background: #f5f7fa;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #ffffff;
+    color: #00255c;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #00255c;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00255c;
+}
+
+
+.servicios {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    animation: latido 1.5s ease-in-out 3;
+}
+
+@keyframes latido{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.3);
+        opacity: 0.6;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.servicio {
+    flex: 1 1 280px;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    padding: 30px 20px;
+    border-radius: 5px;
+    text-align: center;
+    border: 3px solid #00255c;
+}
+
+.servicio h3 {
+    color: #003366;
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+
+.tarifa {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.precio {
+    font-size: 36px;
+    color:  #044dbb;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+
+.bottm {
+    text-align: center;
+    margin: 50px 0;
+    margin-top: 30px;
+}
+.btn {
+    width: 100%;
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #004499;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #00255c;
+    color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    padding: 15px 40px;
+  }
+  .servicios {
+    max-width: 90%;
+    gap: 15px;
+  }
+  .servicio {
+    flex: 1 1 250px;
+    padding: 25px 15px;
+  }
+  .tarifa {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+  .precio {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .submenu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+  }
+  .servicios {
+    flex-direction: column;
+    gap: 15px;
+    max-width: 95%;
+  }
+  .servicio {
+    flex: 1 1 auto;
+    padding: 20px 15px;
+  }
+  .servicio h3 {
+    font-size: 18px;
+  }
+  .tarifa {
+    max-width: 95%;
+    padding: 25px 15px;
+    margin: 20px 10px;
+  }
+  .precio {
+    font-size: 24px;
+  }
+  .btn {
+    padding: 15px;
+    font-size: 16px;
+  }
+  footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
